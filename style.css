@@ -1,0 +1,160 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav, h1, .order-button  {
+    text-transform: uppercase;
+}
+
+header {
+    background: url("Images/header-bg.jpg") center 0 no-repeat;
+    background-size: cover;
+    color: white;
+    padding-bottom: 20px;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+    padding: 15px;
+    }
+
+    .container {
+        max-width: 1080px;
+        margin: 0 auto;
+            }
+
+h1 {
+    font-size: 60px;
+}
+.call-to-action {
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    }
+
+ul li {
+    display: inline-block;
+    }
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 19.5px 15px 19.5px;
+    font-size: 16px;
+}
+
+nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+ul {
+    float: right;
+    margin: 0 auto;
+   }   
+
+.logo {
+    float: left;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin: -5px;
+    }
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+
+.order-button {
+    cursor: pointer;
+    border-top-color: #5bb5fd ;
+    border-bottom-color: #00508d ;
+    border-left-color: transparent;
+    border-right: transparent;
+    background: linear-gradient(to bottom, #399cee  0%,#0060a7  100%);
+    padding: 19px 39px;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+}
+    .order-button:hover {
+        background: linear-gradient(to bottom, #3a9cee  0%,#0078d1  100%);
+    }
+    .order-button:active {
+        background: #3a9cee ;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2) inset;
+    }
+
+.scroll-down {
+    background: url(Images/arrow-down.png) no-repeat center 16px;
+    display: block;
+    border: 2px solid #fff;
+    text-indent: -9999px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 500px;
+}
+    .scroll-down:hover {
+        position: relative;
+        top: 2px;
+    }
+
+ .col-xs-4 {
+    width: 30%;
+    float: left;
+    padding: 0 1%;
+}
+
+.icon {
+    background-image: url(Images/intro-icons.png);
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    padding: 20px 0 0;
+    background-repeat: no-repeat;
+    
+}
+.icon:hover {
+    background-image: url(Images/intro-icons-hover.png)
+}
+
+.icon-galaxy {
+    background-position: -60px 0;
+}
+
+.icon-spaceship {
+    background-position: -120px 0;
+}
+
+section {
+    text-align: center;
+    padding: 60px 10px;
+}
+section h1 {
+        background: #ed303c ;
+        display: inline-block;
+        padding: 0 35px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 18px;
+        line-height: 40px;
+        margin-bottom: 60px;
+        font-weight: normal;
+    }
+
+.section-content-title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #333;
+    margin-top: 0;
+    line-height: 1.3;
+}
