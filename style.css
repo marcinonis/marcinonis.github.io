@@ -8,7 +8,7 @@ nav, h1, .order-button  {
 }
 
 header {
-    background: url("Images/new-background_edited.jpg") center 0 no-repeat;
+    background: url("Images/Optimized-new-background.jpg") center 0 no-repeat;
     background-size: cover;
     color: white;
     padding-bottom: 60px;
@@ -27,8 +27,12 @@ nav {
 
 h1 {
     font-size: 60px;
-    -webkit-text-stroke: 1px darkgray;
+    }
+
+.mainH1 {
+    -webkit-text-stroke: 1px brown;
 }
+
 .call-to-action {
     text-align: center;
     padding: 20px 20px 0 20px;
@@ -51,7 +55,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 ul {
@@ -116,7 +120,7 @@ ul {
     }
 
 .margin-main {
-    margin: 150px auto
+    margin: 140px auto
 }    
 
  .col-xs-4 {
