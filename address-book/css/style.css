@@ -1,0 +1,25 @@
+.page-header button {
+  margin-top: 30px; }
+
+.glyphicon:hover {
+  cursor: pointer; }
+
+.no-contacts img {
+  opacity: 0.5;
+  width: 100%;
+  max-width: 300px; }
+
+.no-contacts h3 {
+  line-height: 1.5; }
+
+.table-contacts {
+  display: none;
+  margin-top: 50px; }
+
+.saved-message {
+  display: none; }
+
+form.is-submitted {
+  display: none; }
+  form.is-submitted + .saved-message {
+    display: block; }

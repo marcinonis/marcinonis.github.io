@@ -1,0 +1,34 @@
+// Header
+.page-header button {
+    margin-top: 30px;
+}
+
+.glyphicon:hover {
+    cursor: pointer;
+}
+
+
+// No contacts is available message
+.no-contacts {
+    img {
+        opacity: 0.5;
+        width: 100%;
+        max-width: 300px;
+    }
+    h3 { line-height: 1.5 }
+}
+
+
+.table-contacts {
+    display: none;
+    margin-top: 50px;
+}
+
+
+// Modal
+.saved-message { display: none; }
+
+form.is-submitted {
+    display: none;
+    + .saved-message { display: block }
+}

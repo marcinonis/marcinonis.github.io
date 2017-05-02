@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDRESS-BOOK APP</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="container">
+
+    <header>
+        <div class="page-header">
+            <div class="row">
+                <div class="col-xs-8">
+                    <h1>ADDRESS-BOOK APP <br>Kontaktai</h1>
+                </div>
+                <div class="col-xs-4 text-right">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newContact"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Naujas kontaktas</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+    <div class="no-contacts text-center">
+        <img src="images/no-contacts-available.svg" alt=""><br>
+        <h3>Kontaktų nėra :( <br><a href="" data-toggle="modal" data-target="#newContact">Sukurti naują</a></h3>
+    </div>
+
+    <table class="table table-contacts">
+        <thead>
+            <tr>
+                <th>Vardas Pavardė  <span class="sort-by-name-btn glyphicon glyphicon-sort" aria-hidden="true"></span></th>
+                <th>Telefonas</th>
+                <th>El. paštas</th>
+                <th>Adresas</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div class="modal fade" id="newContact" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Naujas adresas</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="name" value="" placeholder="Vardas">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="surname" value="" placeholder="Pavardė">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="phone" name="phone" value="" placeholder="Telefonas">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="email" name="email" value="" placeholder="El. paštas">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="address" rows="3" cols="10" placeholder="Adresas"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="saved-message text-center">
+                        <h2>Kontaktas išsaugotas</h2>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Uždaryti</button>
+                    <button type="button" class="btn btn-success btn-save-contact">Išsaugoti</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
