@@ -17,36 +17,12 @@
       "id": "SyqbrEI6e"
     },
     {
-      "name": "n",
-      "surname": "",
-      "phone": "",
-      "email": "",
-      "address": "",
-      "id": "ry6iCE8ag"
-    },
-    {
-      "name": "asdf",
-      "surname": "asdf",
-      "phone": "",
-      "email": "",
-      "address": "",
-      "id": "ry3VyBU6x"
-    },
-    {
       "name": "sdf",
       "surname": "sfdg",
       "phone": "",
       "email": "",
       "address": "",
       "id": "HkNUkHL6x"
-    },
-    {
-      "name": "Vytautas 2",
-      "surname": "sadf",
-      "phone": "fassd",
-      "email": "fdas",
-      "address": "",
-      "id": "S1NklB8pe"
     },
     {
       "name": "Vytautas ",
@@ -57,12 +33,12 @@
       "id": "BJRJxBUpg"
     },
     {
-      "name": "Mantas",
-      "surname": "Petrauskas",
-      "phone": "nera",
-      "email": "xxx@one.lt",
-      "address": "Petrasiunai",
-      "id": "HJ_p19wpx"
+      "name": "Vardas",
+      "surname": "Pavarde",
+      "phone": "telefonas",
+      "email": "El,pastas",
+      "address": "Adresas konfidencialus",
+      "id": "B1BctEY6l"
     }
   ]
 }

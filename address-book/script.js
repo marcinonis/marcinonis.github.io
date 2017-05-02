@@ -7,8 +7,8 @@ var ContactsApp = (function() {
     
     var _loadData = function(){
         $.ajax({
+            method: 'GET',
             url: "http://localhost:3000/contacts",
-            method: "GET",
         }).done(function(data){
             _contactData = data;
             renderTable(_contactData);
@@ -51,6 +51,29 @@ var ContactsApp = (function() {
             renderTable(_contactData);
         }
     }
+
+    var _remove = function(id) {
+        // Trinam is UI
+        $('tr[data-row-id=' + id +']' )
+            .css({ color: 'red', opacity: 0.8 })
+            .fadeOut(300, function(){
+                $(this).remove();
+        });
+
+        //Trinam is DB
+
+        $.ajax({
+            method: 'DELETE',
+            url: "http://localhost:3000/contacts/" + id,
+        })
+
+        // Trinam is ContactsData
+        _.remove(_contactData, function(n) {
+            return n.id === id;
+        });
+
+    }
+
 
     // Select elements
     var $nameInput = $("input[name=name]");
@@ -138,7 +161,22 @@ var ContactsApp = (function() {
             .find("tbody")
             .html(html.join("/n"));
 
+        $(".remove-contact-row").on("click", function() {
+        var $row = $(this).parents('tr');
+        
+        // Susirandam kontakto ID. Jis issaugotas tr elemento atribute data-row-id
+        var id = $row.attr('data-row-id');
+
+        // Ismetam elementa is duomenu
+        
+        _remove(id);
+        
+        // Ismetam elementa is DOM
+        
+    });
+
         $table.show();
+
     }
 
 
@@ -164,47 +202,8 @@ var ContactsApp = (function() {
         ascFlag = !ascFlag; // !undefined
     });
 
-
-    //removing data from table  ------------------------------------------------????????--------------------------------------------------------------
-
-    var _remove = function() {
-        $(".remove-contact-row").ajax({
-            method: 'DELETE',
-            url: "http://localhost:3000/contacts/ID",
-        }) 
-
-    }     
-
-     var _sortAsc = function() {
-        var dataByName = _.sortBy(_contactData, "name");
-        renderTable(dataByName);
-        $(".sort-by-name-btn").attr({class: 'sort-by-name-btn glyphicon glyphicon-sort-by-attributes'});
-    }   
-
-    // iki cia mano briedas ----------------------------------------------------????????????????---------------------------------------------------------------
-
-
-
     // When delete row button is clicked
-    $(".remove-contact-row").on("click", function() {
-        var $row = $(this).parents('tr');
-        
-        // Susirandam kontakto ID. Jis issaugotas tr elemento atribute data-row-id
-        var id = $row.attr('data-row-id');
-
-        // Ismetam elementa is duomenu
-        _.remove(_contactData, function(n) {
-            return n.id === id;
-        });
-
-        
-        // Ismetam elementa is DOM
-        $row
-            .css({ color: 'red', opacity: 0.8 })
-            .fadeOut(300, function(){
-                $(this).remove();
-            });
-    });
+  
 
     return {
         loadData: _loadData,
@@ -213,6 +212,8 @@ var ContactsApp = (function() {
         add: _add,
         remove: _remove
     }
+
+
 
 })();
 
