@@ -18,14 +18,18 @@ nav a {
     border-bottom: 1px solid rgba(255,255,255, 0);
 }
 
-nav li a:hover {
-    border-bottom: solid 1px white;
-    color: white;
-}
+    nav li a:visited {
+        color: white;
+    }
 
-nav li a:active {
-    color: white;
-}
+    nav li a:hover {
+        border-bottom: solid 1px white;
+        color: white;
+    }
+
+    nav li a:active {
+       color: white;
+    }
 
 .third-row {
     margin-top: -20px;
@@ -61,15 +65,23 @@ h3 {
     border-bottom: 1px solid rgba(255,255,255, 0);
     border-top: 1px solid rgba(255,255,255, 0);
     padding-bottom: 2px;
+    text-decoration: none;
 }
+    .header-link:visited {
+        color: white;
+        text-decoration: none;       
+    }
+
     .header-link:hover {
         text-decoration: none;
         color: white;
         border-bottom: solid 1px white;
         border-top: solid 1px white;
     }
+
     .header-link:active {
         color: white;
+        text-decoration: none;
     }
 
 h4 {
