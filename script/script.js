@@ -73,7 +73,7 @@ $("#modal-image").click(function () {
 // ------  smooth scroll -----
 
 var $root = $('html, body');
-$('.nav-link').click(function() {
+$('a').click(function() {
     $root.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 700);
@@ -81,7 +81,7 @@ $('.nav-link').click(function() {
 
 //-----------------
 
-$(document).ready(function(){
+
      $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
                 $('#back-to-top').fadeIn();
@@ -90,14 +90,5 @@ $(document).ready(function(){
             }
         });
         // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
         
-        $('#back-to-top').tooltip('show');
 
-});
