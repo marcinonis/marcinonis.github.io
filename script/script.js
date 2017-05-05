@@ -73,7 +73,7 @@ $("#modal-image").click(function () {
 // ------  smooth scroll -----
 
 var $root = $('html, body');
-$('a').click(function() {
+$('.nav-link').click(function() {
     $root.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 700);

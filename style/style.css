@@ -168,3 +168,23 @@ hr {
     display:none;
     padding: 5px 10px 10px 10px;
 }
+
+.contact-link {
+    text-decoration: none;
+    color: white;
+}
+    .contact-link:visited {
+        color: white;
+        text-decoration: none;       
+    }
+
+    .contact-link:hover {
+        text-decoration: none;
+        color: white;
+        border-bottom: solid 1px white;
+    }
+
+    .contact-link:active {
+        color: white;
+        text-decoration: none;
+    }
