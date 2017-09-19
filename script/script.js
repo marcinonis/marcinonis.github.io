@@ -92,3 +92,18 @@ $('a').click(function() {
         // scroll body to 0px on click
         
 
+
+
+
+        // --------------- sveikinimas ----------- (delete afterwards)
+
+        $(document).ready(function(){
+            $(".color").mouseenter(function(){
+              $(this).addClass("color-on");
+              $(this).removeClass("color-off");
+            });
+            $(".color").mouseleave(function(){
+              $(this).removeClass("color-on");
+              $(this).addClass("color-off");
+            });
+          });
